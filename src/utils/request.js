@@ -14,7 +14,7 @@ import axios from "axios";
 //创建axios实例,在axios实例里面可以自定义一些请求的选项
 const request = axios.create({
     //设置公共路径
-    baseURL : "http://localhost:8888",
+    baseURL : process.env.VUE_APP_SERVICE_URL,
     //设置请求的超时时间
     timeout : 5000
 });
